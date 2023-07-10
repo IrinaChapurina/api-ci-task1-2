@@ -13,7 +13,7 @@ public class MobileBankApiTestV1 {
                 .when()
                 .get("/demo/accounts")
                 .then()
-                .statusCode(400)
+                .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"));
     }
 }
